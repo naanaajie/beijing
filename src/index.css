@@ -1,0 +1,66 @@
+:root {
+  /* Color System */
+  --bg-primary: #F7F4EE;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --accent: #B7791F;
+  --wall: #A85C32;
+  --river: #4D83A6;
+  --road: #6F6F6F;
+  --border: rgba(0, 0, 0, 0.08);
+  --panel-bg: rgba(255, 255, 255, 0.88);
+
+  /* Typography */
+  --font-serif: 'Noto Serif SC', 'Songti SC', serif;
+  --font-sans: 'Noto Sans SC', 'PingFang SC', sans-serif;
+
+  /* Spacing & Radius */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* Shadow */
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+
+  /* Typography Scales */
+  --font-size-caption: 13px;
+  --font-size-body: 15px;
+  --font-size-section: 18px;
+  --font-size-dynasty: 32px;
+  --line-height-body: 1.7;
+}
+
+/* Water flow animations */
+@keyframes flow      { to { stroke-dashoffset: -24 } }
+@keyframes flow-slow { to { stroke-dashoffset: -20 } }
+@keyframes flow-fast { to { stroke-dashoffset: -18 } }
+
+.cf  { stroke-dasharray: 8 6;  animation: flow      1.8s linear infinite; }
+.cfs { stroke-dasharray: 6 8;  animation: flow-slow 2.6s linear infinite; }
+.cff { stroke-dasharray: 5 4;  animation: flow-fast 1.2s linear infinite; }
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  overflow-x: hidden;
+  background: #FAF6EF;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: var(--line-height-body);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+#root {
+  width: 100%;
+}
