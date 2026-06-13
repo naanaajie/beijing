@@ -1,20 +1,7 @@
-import GhostWalls from './GhostWalls'
-
 export default function EraLiao({ onShowInfo }) {
   return (
     <>
-      <GhostWalls eraIndex={0} />
-      {/* City wall */}
-      <rect x={118} y={298} width={196} height={166} rx={4}
-        fill="#EF9F27" fillOpacity={0.13} stroke="#EF9F27" strokeWidth={2.5} strokeOpacity={0.88} filter="url(#wall-glow)"/>
-      <text x={216} y={292} fontSize={12} fontFamily="var(--font-sans)"
-        fill="#BA7517" textAnchor="middle" fontWeight={600} letterSpacing="0.06em">辽南京城墙</text>
 
-      {/* Imperial city */}
-      <rect x={165} y={335} width={76} height={64} rx={2}
-        fill="#EF9F27" fillOpacity={0.15} stroke="#EF9F27"
-        strokeWidth={1} strokeOpacity={0.5} strokeDasharray="4 2"/>
-      <text x={203} y={370} fontSize={10} fontFamily="var(--font-sans)" fill="#BA7517" textAnchor="middle" fontWeight={400} letterSpacing="0.04em">皇城</text>
 
       {/* Sanggan River tributary */}
       <path d="M18 505 Q55 488 95 478 Q125 472 155 458 Q172 448 188 435"

@@ -1,24 +1,7 @@
-import GhostWalls from './GhostWalls'
-
 export default function EraYuan({ onShowInfo }) {
   return (
     <>
-      <GhostWalls eraIndex={2} />
-      {/* City wall */}
-      <rect x={148} y={88} width={336} height={356} rx={4}
-        fill="#534AB7" fillOpacity={0.13} stroke="#534AB7" strokeWidth={2.5} strokeOpacity={0.88} filter="url(#wall-glow)"/>
-      <text x={316} y={82} fontSize={12} fontFamily="var(--font-sans)"
-        fill="#3C3489" textAnchor="middle" fontWeight={600} letterSpacing="0.06em">元大都城墙</text>
 
-      {/* Imperial city */}
-      <rect x={244} y={192} width={136} height={130} rx={3}
-        fill="#534AB7" fillOpacity={0.1} stroke="#534AB7"
-        strokeWidth={1} strokeOpacity={0.5} strokeDasharray="5 2"/>
-
-      {/* Palace city */}
-      <rect x={268} y={226} width={88} height={66} rx={2}
-        fill="#534AB7" fillOpacity={0.15} stroke="#534AB7" strokeWidth={1.2} strokeOpacity={0.7}/>
-      <text x={312} y={262} fontSize={10} fontFamily="var(--font-sans)" fill="#26215C" textAnchor="middle" fontWeight={400} letterSpacing="0.04em">宫城</text>
 
       {/* Jishuitan (Shichahai) */}
       <ellipse cx={276} cy={162} rx={25} ry={14}
@@ -51,9 +34,6 @@ export default function EraYuan({ onShowInfo }) {
       <circle cx={664} cy={204} r={5} fill="#1D9E75" fillOpacity={0.7} stroke="#fff" strokeWidth={1}/>
       <text x={659} y={218} fontSize={8} fontFamily="var(--font-sans)" fill="#085041" textAnchor="middle" fontWeight={300} fillOpacity={0.55}>通州</text>
 
-      {/* North earth wall highlight */}
-      <rect x={150} y={90} width={332} height={7} rx={2} fill="#534AB7" fillOpacity={0.2} stroke="#534AB7" strokeWidth={0.5}/>
-      <text x={484} y={106} fontSize={8} fontFamily="var(--font-sans)" fill="#3C3489" textAnchor="start" fontWeight={300} fillOpacity={0.55}>土城（北墙遗址）</text>
 
       {/* Landmark: Bell-Drum Tower */}
       <g style={{ cursor: 'pointer' }} onClick={() => onShowInfo(

@@ -1,30 +1,7 @@
-import GhostWalls from './GhostWalls'
-
 export default function EraQing({ onShowInfo }) {
   return (
     <>
-      <GhostWalls eraIndex={4} />
-      {/* Outer city */}
-      <rect x={174} y={356} width={254} height={106} rx={3}
-        fill="#0F6E56" fillOpacity={0.07} stroke="#0F6E56"
-        strokeWidth={1.5} strokeOpacity={0.5} strokeDasharray="6 3"/>
 
-      {/* Inner city */}
-      <rect x={174} y={160} width={254} height={196} rx={3}
-        fill="#0F6E56" fillOpacity={0.13} stroke="#0F6E56" strokeWidth={2.5} strokeOpacity={0.88} filter="url(#wall-glow)"/>
-      <text x={301} y={153} fontSize={12} fontFamily="var(--font-sans)"
-        fill="#085041" textAnchor="middle" fontWeight={600} letterSpacing="0.06em">清北京</text>
-
-      {/* Imperial city */}
-      <rect x={244} y={206} width={116} height={114} rx={2}
-        fill="#0F6E56" fillOpacity={0.1} stroke="#0F6E56"
-        strokeWidth={1} strokeOpacity={0.4} strokeDasharray="5 2"/>
-
-      {/* Forbidden City */}
-      <rect x={268} y={226} width={68} height={74} rx={2}
-        fill="#1D9E75" fillOpacity={0.18} stroke="#0F6E56" strokeWidth={1.5}/>
-      <text x={302} y={266} fontSize={10} fontFamily="var(--font-sans)"
-        fill="#04342C" textAnchor="middle" fontWeight={400} letterSpacing="0.04em">紫禁城</text>
 
       {/* Shichahai */}
       <ellipse cx={262} cy={176} rx={17} ry={10}
@@ -61,9 +38,6 @@ export default function EraQing({ onShowInfo }) {
       <circle cx={660} cy={201} r={5} fill="#1D9E75" fillOpacity={0.7} stroke="#fff" strokeWidth={1}/>
       <text x={655} y={215} fontSize={8} fontFamily="var(--font-sans)" fill="#085041" textAnchor="middle" fontWeight={300} fillOpacity={0.55}>通州</text>
 
-      {/* Central axis */}
-      <line x1={302} y1={160} x2={302} y2={462}
-        stroke="#0F6E56" strokeWidth={0.8} strokeOpacity={0.28} strokeDasharray="3 4"/>
 
       {/* Landmark: Forbidden City */}
       <g style={{ cursor: 'pointer' }} onClick={() => onShowInfo(

@@ -1,32 +1,7 @@
-import GhostWalls from './GhostWalls'
-
 export default function EraMing({ onShowInfo }) {
   return (
     <>
-      <GhostWalls eraIndex={3} />
-      {/* Outer city (south, Jiajing addition) */}
-      <rect x={174} y={356} width={254} height={106} rx={3}
-        fill="#3B6D11" fillOpacity={0.07} stroke="#3B6D11"
-        strokeWidth={1.5} strokeOpacity={0.55} strokeDasharray="6 3"/>
-      <text x={301} y={472} fontSize={9} fontFamily="var(--font-sans)"
-        fill="#3B6D11" textAnchor="middle" fontStyle="italic" letterSpacing="0.04em">外城（嘉靖增筑）</text>
 
-      {/* Inner city */}
-      <rect x={174} y={160} width={254} height={196} rx={3}
-        fill="#3B6D11" fillOpacity={0.13} stroke="#3B6D11" strokeWidth={2.5} strokeOpacity={0.88} filter="url(#wall-glow)"/>
-      <text x={301} y={153} fontSize={12} fontFamily="var(--font-sans)"
-        fill="#27500A" textAnchor="middle" fontWeight={600} letterSpacing="0.06em">明北京内城</text>
-
-      {/* Imperial city */}
-      <rect x={244} y={206} width={116} height={114} rx={2}
-        fill="#3B6D11" fillOpacity={0.12} stroke="#3B6D11"
-        strokeWidth={1} strokeOpacity={0.5} strokeDasharray="5 2"/>
-
-      {/* Forbidden City */}
-      <rect x={268} y={226} width={68} height={74} rx={2}
-        fill="#639922" fillOpacity={0.2} stroke="#3B6D11" strokeWidth={1.5}/>
-      <text x={302} y={266} fontSize={10} fontFamily="var(--font-sans)"
-        fill="#173404" textAnchor="middle" fontWeight={400} letterSpacing="0.04em">紫禁城</text>
 
       {/* Beihai */}
       <ellipse cx={254} cy={248} rx={13} ry={20}
@@ -49,9 +24,6 @@ export default function EraMing({ onShowInfo }) {
       <circle cx={660} cy={202} r={5} fill="#1D9E75" fillOpacity={0.7} stroke="#fff" strokeWidth={1}/>
       <text x={655} y={216} fontSize={8} fontFamily="var(--font-sans)" fill="#085041" textAnchor="middle" fontWeight={300} fillOpacity={0.55}>通州</text>
 
-      {/* Central axis */}
-      <line x1={302} y1={160} x2={302} y2={462}
-        stroke="#3B6D11" strokeWidth={0.8} strokeOpacity={0.28} strokeDasharray="3 4"/>
 
       {/* Landmark: Forbidden City */}
       <g style={{ cursor: 'pointer' }} onClick={() => onShowInfo(
