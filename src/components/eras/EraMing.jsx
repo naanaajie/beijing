@@ -13,7 +13,7 @@ export default function EraMing({ onShowInfo }) {
 
       {/* Inner city */}
       <rect x={174} y={160} width={254} height={196} rx={3}
-        fill="#3B6D11" fillOpacity={0.08} stroke="#3B6D11" strokeWidth={2.2} strokeOpacity={0.78} filter="url(#wall-glow)"/>
+        fill="#3B6D11" fillOpacity={0.13} stroke="#3B6D11" strokeWidth={2.5} strokeOpacity={0.88} filter="url(#wall-glow)"/>
       <text x={301} y={153} fontSize={12} fontFamily="var(--font-sans)"
         fill="#27500A" textAnchor="middle" fontWeight={600} letterSpacing="0.06em">明北京内城</text>
 

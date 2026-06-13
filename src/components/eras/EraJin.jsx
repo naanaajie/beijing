@@ -6,7 +6,7 @@ export default function EraJin({ onShowInfo }) {
       <GhostWalls eraIndex={1} />
       {/* City wall */}
       <rect x={88} y={258} width={276} height={216} rx={4}
-        fill="#D4537E" fillOpacity={0.09} stroke="#D4537E" strokeWidth={2.2} strokeOpacity={0.75} filter="url(#wall-glow)"/>
+        fill="#D4537E" fillOpacity={0.13} stroke="#D4537E" strokeWidth={2.5} strokeOpacity={0.88} filter="url(#wall-glow)"/>
       <text x={226} y={252} fontSize={12} fontFamily="var(--font-sans)"
         fill="#993556" textAnchor="middle" fontWeight={600} letterSpacing="0.06em">金中都城墙</text>
 

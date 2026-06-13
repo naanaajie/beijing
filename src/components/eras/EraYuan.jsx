@@ -6,7 +6,7 @@ export default function EraYuan({ onShowInfo }) {
       <GhostWalls eraIndex={2} />
       {/* City wall */}
       <rect x={148} y={88} width={336} height={356} rx={4}
-        fill="#534AB7" fillOpacity={0.07} stroke="#534AB7" strokeWidth={2.2} strokeOpacity={0.72} filter="url(#wall-glow)"/>
+        fill="#534AB7" fillOpacity={0.13} stroke="#534AB7" strokeWidth={2.5} strokeOpacity={0.88} filter="url(#wall-glow)"/>
       <text x={316} y={82} fontSize={12} fontFamily="var(--font-sans)"
         fill="#3C3489" textAnchor="middle" fontWeight={600} letterSpacing="0.06em">元大都城墙</text>
 

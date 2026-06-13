@@ -6,7 +6,7 @@ export default function EraLiao({ onShowInfo }) {
       <GhostWalls eraIndex={0} />
       {/* City wall */}
       <rect x={118} y={298} width={196} height={166} rx={4}
-        fill="#EF9F27" fillOpacity={0.09} stroke="#EF9F27" strokeWidth={2.2} strokeOpacity={0.75} filter="url(#wall-glow)"/>
+        fill="#EF9F27" fillOpacity={0.13} stroke="#EF9F27" strokeWidth={2.5} strokeOpacity={0.88} filter="url(#wall-glow)"/>
       <text x={216} y={292} fontSize={12} fontFamily="var(--font-sans)"
         fill="#BA7517" textAnchor="middle" fontWeight={600} letterSpacing="0.06em">辽南京城墙</text>
 
